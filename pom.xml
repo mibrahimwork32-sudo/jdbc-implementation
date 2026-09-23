@@ -17,6 +17,7 @@
 	<groupId>jdbc_implemetation.example</groupId>
 	<artifactId>jdbc_implementation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 
 	<!-- Java Version -->
 	<properties>
@@ -26,12 +27,20 @@
 	<!-- Dependencies -->
 	<dependencies>
 
-		<!-- Spring Boot REST API + Embedded Tomcat -->
+		<!-- Spring Boot REST API -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- External Apache Tomcat -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Spring Data JPA -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
