@@ -17,7 +17,6 @@
 	<groupId>jdbc_implemetation.example</groupId>
 	<artifactId>jdbc_implementation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 
 	<!-- Java Version -->
 	<properties>
